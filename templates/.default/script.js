@@ -24,8 +24,6 @@ $(function(){
                     })
                         .then(function(response) {
                             if (response.status === 'success') {
-                                console.log(response);
-                                // console.log(response.data.ITEMS.UF_SVG.replace(/^.|.$/g,""));
                                 menuSectionsModel.sections = response.data.ITEMS;
                                 menuSectionsModel.needLoad = "N";
                             }else{

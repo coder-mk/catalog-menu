@@ -1,6 +1,6 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 
-<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<?$this->addExternalJS($this->GetFolder()."/js/Vue.js"); ?>
 
 <div id="catalog-menu" class="catalog-menu">
     <a v-on:click="getSections(<?=$arParams["IBLOCK_ID"]?>, <?=$arParams["COUNT_ITEMS"]?>, $event)" class="catalog-menu__btn js-catalog-btn" href="#">
